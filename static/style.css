@@ -1,0 +1,92 @@
+/***************************************************************************
+                                NAVBAR
+***************************************************************************/
+.navbar {
+	margin-bottom: 0px!important;
+    background-color: white!important;
+    border: none!important;
+   /* position: fixed;*/
+    height: 80px;
+    width: 100vw;
+    z-index: 5;
+}
+
+button.navbar-toggle.collapsed {
+    position: fixed;
+        top: 88vh;
+    left: 5vw;
+    background-color: white!important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 0px 3px 2px #00000054;
+        padding: 0px 14px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+    background: linear-gradient(0.25turn,#2260A0, #4E88C4);
+    height: 3px;
+}
+span.navbar-brand {
+    margin-left: calc(50% - 40px);
+    margin-top: 15px;
+}
+span.navbar-brand img {
+    width: 50px!important;
+    height: 50px!important;
+}
+
+
+/**********PANEL***************/
+
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing  {
+    height: 101vh;
+    top: -1px;
+    position: fixed;
+    /* z-index: 9999999999999999999; */
+    /* background-color: green; */
+    width: 100vw;
+    background: linear-gradient(0.25turn,#2260A0, #4E88C4);
+}
+
+button.navbar-toggle {
+    z-index: 1;
+}
+ul.nav.navbar-nav {
+    color: white!important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 27px;
+        width: 100vw;
+    text-align: center;
+}
+.nav li {
+    margin: 35px 0px;
+}
+.navbar-collapse a {
+    background-color: transparent!important;
+    color: white!important;
+}
+button[aria-expanded="true"] {
+    background-color: transparent!important;
+    border: none;
+    position: fixed;
+    left: 82vw;
+}
+button[aria-expanded="true"]:before {
+    content: "⨯";
+    color: white;
+    font-size: 46px;
+}
+button[aria-expanded="true"] span.icon-bar {
+    display: none;
+}
+
+/***************END PANEL**************/
+
+
+/***************************************************************************
+                               END NAVBAR
+***************************************************************************/
